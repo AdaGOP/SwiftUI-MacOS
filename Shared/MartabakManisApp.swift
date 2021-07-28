@@ -14,7 +14,6 @@ struct MartabakManisApp: App {
             #if os(macOS)
             NavigationView {
                 Sidebar()
-                //              ItemsListView(viewModel: ItemsViewModel(category: .top))
             }
             #else
             NavigationView{
@@ -22,6 +21,8 @@ struct MartabakManisApp: App {
             }.navigationBarTitle("Martabak Manis")
             #endif
             
+        }.commands {
+            MartabakCommand()
         }
     }
 }
