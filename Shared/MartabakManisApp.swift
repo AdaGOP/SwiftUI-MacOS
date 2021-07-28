@@ -11,7 +11,17 @@ import SwiftUI
 struct MartabakManisApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(macOS)
+            NavigationView {
+                Sidebar()
+                //              ItemsListView(viewModel: ItemsViewModel(category: .top))
+            }
+            #else
+            NavigationView{
+                ContentView()
+            }.navigationBarTitle("Martabak Manis")
+            #endif
+            
         }
     }
 }

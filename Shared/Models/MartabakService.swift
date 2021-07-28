@@ -41,7 +41,7 @@ class MartabakService: ObservableObject {
                     } catch let DecodingError.typeMismatch(type, context)  {
                         print("Type '\(type)' mismatch:", context.debugDescription)
                         print("codingPath:", context.codingPath)
-                    }catch let jsonError{
+                    } catch let jsonError{
                         print(jsonError.localizedDescription)
                     }
                 }
