@@ -18,10 +18,9 @@ struct MenuRecord: Codable, Identifiable {
 }
 
 struct Menu: Codable {
-    let nama: String
+    let nama, deskripsi: String
     let harga: Int
     let gambar: String
-    let rating: Int
-    let deskripsi: String
+    let rating: Double
 }
 
