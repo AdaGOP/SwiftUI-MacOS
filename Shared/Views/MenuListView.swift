@@ -14,7 +14,7 @@ struct MenuListView: View {
     var body: some View {
         NavigationView {
             List {
-                MenuCarouselView(title: "Menu Martabak", menus: menuList.menus)
+                MenuCarouselView(title: "", menus: menuList.menus)
             }.navigationBarTitle("Martabak Manis")
         }
         .onAppear(perform: {

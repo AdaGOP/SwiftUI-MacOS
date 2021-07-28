@@ -8,19 +8,20 @@
 import Foundation
 
 struct MenuRecords: Codable {
-    var records: [Menu]
+    let records: [MenuRecord]
 }
 
-struct Menu: Codable, Identifiable {
+struct MenuRecord: Codable, Identifiable {
     let id: String
-    let name: String
+    let fields: Menu
+    let createdTime: String
+}
+
+struct Menu: Codable {
+    let nama: String
     let harga: Int
-    let gambar: [Gambar]
-    let rating: Double
+    let gambar: String
+    let rating: Int
     let deskripsi: String
 }
 
-struct Gambar: Codable {
-    let id: String
-    let url: String
-}

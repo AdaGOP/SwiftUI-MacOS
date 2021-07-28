@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuCard: View {
     
-    let menu: Menu
+    let menu: MenuRecord
     
     var body: some View {
         ZStack {
@@ -18,15 +18,15 @@ struct MenuCard: View {
                 .cornerRadius(8)
                 .shadow(radius: 4)
             
-            Text(menu.name)
+            Text(menu.fields.nama)
                 .multilineTextAlignment(.center)
         }
         .frame(width: 204, height: 306)
     }
 }
 
-struct MenuCard_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuCard(menu: Menu(id: "1", name: "Mantap", harga: 20000, gambar: [Gambar(id: "1", url: "https://dl.airtable.com/.attachments/a1f1b11a4e940823217a51b3fb1d0740/eb5bc690/monika-grabkowska-89HtiQoRgPc-unsplash.jpeg")], rating: 4.8, deskripsi: "NyamNyam"))
-    }
-}
+//struct MenuCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MenuCard(menu: Menu(nama: "Mantap", harga: 20000, gambar: [Gambar(id: "1", url: "https://dl.airtable.com/.attachments/a1f1b11a4e940823217a51b3fb1d0740/eb5bc690/monika-grabkowska-89HtiQoRgPc-unsplash.jpeg")], rating: 4.8, deskripsi: "NyamNyam"))
+//    }
+//}
