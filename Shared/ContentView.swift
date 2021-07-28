@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    var martabakService = MartabakService()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        MenuListView()
     }
 }
 

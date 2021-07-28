@@ -21,6 +21,12 @@
 		4660F53526B15631000D19BE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F53326B15631000D19BE /* Menu.swift */; };
 		4660F53926B159F1000D19BE /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F53826B159F1000D19BE /* MenuListViewModel.swift */; };
 		4660F53A26B159F1000D19BE /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F53826B159F1000D19BE /* MenuListViewModel.swift */; };
+		4660F53C26B1659A000D19BE /* MenuCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F53B26B1659A000D19BE /* MenuCarouselView.swift */; };
+		4660F53D26B1659A000D19BE /* MenuCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F53B26B1659A000D19BE /* MenuCarouselView.swift */; };
+		4660F53F26B16645000D19BE /* MenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F53E26B16645000D19BE /* MenuCard.swift */; };
+		4660F54026B16645000D19BE /* MenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F53E26B16645000D19BE /* MenuCard.swift */; };
+		4660F54226B16781000D19BE /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F54126B16781000D19BE /* MenuListView.swift */; };
+		4660F54326B16781000D19BE /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660F54126B16781000D19BE /* MenuListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,9 @@
 		4660F53026B155E8000D19BE /* MartabakManisError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartabakManisError.swift; sourceTree = "<group>"; };
 		4660F53326B15631000D19BE /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		4660F53826B159F1000D19BE /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
+		4660F53B26B1659A000D19BE /* MenuCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCarouselView.swift; sourceTree = "<group>"; };
+		4660F53E26B16645000D19BE /* MenuCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCard.swift; sourceTree = "<group>"; };
+		4660F54126B16781000D19BE /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,7 @@
 				4660F53626B15763000D19BE /* ViewModels */,
 				4660F52F26B1559C000D19BE /* Models */,
 				4660F50B26B15198000D19BE /* MartabakManisApp.swift */,
+				4660F50C26B15198000D19BE /* ContentView.swift */,
 				4660F50D26B15199000D19BE /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -125,7 +135,9 @@
 		4660F53726B15778000D19BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4660F50C26B15198000D19BE /* ContentView.swift */,
+				4660F53B26B1659A000D19BE /* MenuCarouselView.swift */,
+				4660F53E26B16645000D19BE /* MenuCard.swift */,
+				4660F54126B16781000D19BE /* MenuListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4660F54226B16781000D19BE /* MenuListView.swift in Sources */,
+				4660F53F26B16645000D19BE /* MenuCard.swift in Sources */,
 				4660F53126B155E8000D19BE /* MartabakManisError.swift in Sources */,
 				4660F52026B15199000D19BE /* ContentView.swift in Sources */,
+				4660F53C26B1659A000D19BE /* MenuCarouselView.swift in Sources */,
 				4660F52D26B15254000D19BE /* MartabakService.swift in Sources */,
 				4660F51E26B15199000D19BE /* MartabakManisApp.swift in Sources */,
 				4660F53426B15631000D19BE /* Menu.swift in Sources */,
@@ -240,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4660F54326B16781000D19BE /* MenuListView.swift in Sources */,
+				4660F54026B16645000D19BE /* MenuCard.swift in Sources */,
 				4660F53226B155E8000D19BE /* MartabakManisError.swift in Sources */,
 				4660F52126B15199000D19BE /* ContentView.swift in Sources */,
+				4660F53D26B1659A000D19BE /* MenuCarouselView.swift in Sources */,
 				4660F52E26B15254000D19BE /* MartabakService.swift in Sources */,
 				4660F51F26B15199000D19BE /* MartabakManisApp.swift in Sources */,
 				4660F53526B15631000D19BE /* Menu.swift in Sources */,

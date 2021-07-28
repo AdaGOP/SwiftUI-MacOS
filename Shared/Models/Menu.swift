@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct Menu: Codable, Hashable {
-    
+struct MenuRecords: Codable {
+    var records: [Menu]
+}
+
+struct Menu: Codable, Identifiable {
     let id: String
     let name: String
     let harga: Int
@@ -17,7 +20,7 @@ struct Menu: Codable, Hashable {
     let deskripsi: String
 }
 
-struct Gambar {
+struct Gambar: Codable {
     let id: String
     let url: String
 }
