@@ -31,8 +31,8 @@ struct MenuCarouselView: View {
     }
 }
 
-//struct MenuCarouselView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MenuCarouselView()
-//    }
-//}
+struct MenuCarouselView_Previews: PreviewProvider {
+    static var previews: some View {
+        MenuCarouselView(title: "", menus: [MenuRecord(id: "asd", fields: Menu(nama: "Martabak Mantap", deskripsi: "Enak Banget", harga: 20000, gambar: "", rating: 4.7), createdTime: "")])
+    }
+}

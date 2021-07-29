@@ -25,8 +25,8 @@ struct MenuCard: View {
     }
 }
 
-//struct MenuCard_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MenuCard(menu: Menu(nama: "Mantap", harga: 20000, gambar: [Gambar(id: "1", url: "https://dl.airtable.com/.attachments/a1f1b11a4e940823217a51b3fb1d0740/eb5bc690/monika-grabkowska-89HtiQoRgPc-unsplash.jpeg")], rating: 4.8, deskripsi: "NyamNyam"))
-//    }
-//}
+struct MenuCard_Previews: PreviewProvider {
+    static var previews: some View {
+        MenuCard(menu: MenuRecord(id: "", fields: Menu(nama: "Martabak Mantap", deskripsi: "Enak Banget", harga: 70000, gambar: "https://dl.airtable.com/.attachments/a1f1b11a4e940823217a51b3fb1d0740/eb5bc690/monika-grabkowska-89HtiQoRgPc-unsplash.jpeg", rating: 4.7), createdTime: ""))
+    }
+}
