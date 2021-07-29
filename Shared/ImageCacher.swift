@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppKit
 
 private let _imageCache = NSCache<AnyObject, AnyObject>()
 

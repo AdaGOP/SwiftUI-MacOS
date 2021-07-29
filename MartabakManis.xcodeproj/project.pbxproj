@@ -31,14 +31,14 @@
 		468AE54226B19ABE002A8B6B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468AE54126B19ABE002A8B6B /* Category.swift */; };
 		468AE54526B19BF3002A8B6B /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468AE54426B19BF3002A8B6B /* ItemListView.swift */; };
 		468AE54726B1A08B002A8B6B /* MartabakCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468AE54626B1A08B002A8B6B /* MartabakCommand.swift */; };
-<<<<<<< Updated upstream
+
 		46A1C11426B25402000A2163 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1C11326B25402000A2163 /* FormView.swift */; };
 		46A1C11626B254B3000A2163 /* PickerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1C11526B254B3000A2163 /* PickerFormView.swift */; };
 		46A1C11826B26D3A000A2163 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1C11726B26D3A000A2163 /* ImageCacher.swift */; };
 		46A1C11926B26D3A000A2163 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1C11726B26D3A000A2163 /* ImageCacher.swift */; };
-=======
+
 		46A1C11A26B270E5000A2163 /* MartabakCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468AE54626B1A08B002A8B6B /* MartabakCommand.swift */; };
->>>>>>> Stashed changes
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

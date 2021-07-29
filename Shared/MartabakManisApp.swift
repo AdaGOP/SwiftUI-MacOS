@@ -21,12 +21,13 @@ struct MartabakManisApp: App {
                 ContentView()
             }.navigationBarTitle("Martabak Manis")
             #endif
-        }.commands {
-            #if os(macOS)
-            NavigationView {
-                MartabakCommand()
-            }
-            #endif
         }
+//        .commands {
+//            #if os(macOS)
+//            NavigationView {
+//                MartabakCommand()
+//            }
+//            #endif
+//        }
     }
 }

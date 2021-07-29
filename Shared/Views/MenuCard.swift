@@ -25,14 +25,19 @@ struct MenuCard: View {
                 .cornerRadius(8)
                 .shadow(radius: 4)
             HStack {
-                Image(nsImage: imageCacher.image!) 
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
-
+                if self.imageCacher.image != nil {
+                    Image(nsImage: self.imageCacher.image!)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50, height: 50)
+                }
+                    
                 Text(menu.fields.nama)
                     .multilineTextAlignment(.center)
             }
+        }
+        .onAppear {
+            self.imageCacher.loadImage(with: URL(string: self.menu.fields.gambar)!)
         }
         .frame(width: 204, height: 306)
     }
