@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Sidebar: View {
     @State private var showSamplesSheet = false
-    @ObservedObject private var menuList = MartabakService()
     
     private let openSamplesMenuItemSelected = NotificationCenter.default
         .publisher(for: .showSamples)

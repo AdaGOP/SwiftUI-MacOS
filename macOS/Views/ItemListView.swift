@@ -36,7 +36,9 @@ struct ItemsListView: View {
     private var view: some View {
         List(menuList.menus) { item in
             MenuCarouselView(title: "", menus: menuList.menus)
-        }
+        }.onAppear(perform: {
+            menuList.fetchMartabakList()
+        })
     }
 
 }

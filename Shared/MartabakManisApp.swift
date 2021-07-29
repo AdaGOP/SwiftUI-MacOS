@@ -22,7 +22,11 @@ struct MartabakManisApp: App {
             #endif
             
         }.commands {
-            MartabakCommand()
+            #if os(macOS)
+            NavigationView {
+                MartabakCommand()
+            }
+            #endif
         }
     }
 }
