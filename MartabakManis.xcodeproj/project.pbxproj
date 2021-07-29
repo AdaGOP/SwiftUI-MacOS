@@ -31,6 +31,8 @@
 		468AE54226B19ABE002A8B6B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468AE54126B19ABE002A8B6B /* Category.swift */; };
 		468AE54526B19BF3002A8B6B /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468AE54426B19BF3002A8B6B /* ItemListView.swift */; };
 		468AE54726B1A08B002A8B6B /* MartabakCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468AE54626B1A08B002A8B6B /* MartabakCommand.swift */; };
+		46A1C11426B25402000A2163 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1C11326B25402000A2163 /* FormView.swift */; };
+		46A1C11626B254B3000A2163 /* PickerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1C11526B254B3000A2163 /* PickerFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		468AE54126B19ABE002A8B6B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		468AE54426B19BF3002A8B6B /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		468AE54626B1A08B002A8B6B /* MartabakCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartabakCommand.swift; sourceTree = "<group>"; };
+		46A1C11326B25402000A2163 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		46A1C11526B254B3000A2163 /* PickerFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				468AE54426B19BF3002A8B6B /* ItemListView.swift */,
+				46A1C11326B25402000A2163 /* FormView.swift */,
+				46A1C11526B254B3000A2163 /* PickerFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +283,8 @@
 			files = (
 				468AE54026B1942B002A8B6B /* Sidebar.swift in Sources */,
 				4660F54326B16781000D19BE /* MenuListView.swift in Sources */,
+				46A1C11426B25402000A2163 /* FormView.swift in Sources */,
+				46A1C11626B254B3000A2163 /* PickerFormView.swift in Sources */,
 				4660F54026B16645000D19BE /* MenuCard.swift in Sources */,
 				468AE54726B1A08B002A8B6B /* MartabakCommand.swift in Sources */,
 				4660F53226B155E8000D19BE /* MartabakManisError.swift in Sources */,
