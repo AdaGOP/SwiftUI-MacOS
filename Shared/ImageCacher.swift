@@ -21,6 +21,7 @@ class ImageCacher: ObservableObject {
         let urlString = url.absoluteString
         if let imageFromCache = imageCache.object(forKey: urlString as AnyObject) as? NSImage {
             self.image = imageFromCache
+            print("Image from cache")
             return
         }
         
@@ -34,6 +35,7 @@ class ImageCacher: ObservableObject {
                 self.imageCache.setObject(image, forKey: urlString as AnyObject)
                 DispatchQueue.main.async { [weak self] in
                     self?.image = image
+                    print("Image from background")
                 }
             } catch {
                 print(error.localizedDescription)

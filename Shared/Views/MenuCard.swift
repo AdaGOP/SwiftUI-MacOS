@@ -14,10 +14,6 @@ struct MenuCard: View {
     
     @ObservedObject var imageCacher = ImageCacher()
     
-    init(menu: MenuRecord) {
-        self.menu = menu
-    }
-    
     var body: some View {
         ZStack {
             Rectangle()
@@ -31,12 +27,13 @@ struct MenuCard: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50, height: 50)
                 }
-                    
+                
                 Text(menu.fields.nama)
                     .multilineTextAlignment(.center)
             }
         }
         .onAppear {
+            
             self.imageCacher.loadImage(with: URL(string: self.menu.fields.gambar)!)
         }
         .frame(width: 204, height: 306)
