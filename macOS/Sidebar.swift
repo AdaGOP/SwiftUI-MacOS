@@ -16,7 +16,7 @@ struct Sidebar: View {
     
     var body: some View {
         List(Category.allCases) { category in
-          NavigationLink(destination: ItemsListView()) {
+            NavigationLink(destination: ItemsListView()) {
             Label(category.name, systemImage: category.icon)
           }
         }

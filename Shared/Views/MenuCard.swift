@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import Cocoa
 
 struct MenuCard: View {
     
     let menu: MenuRecord
+    
+    @ObservedObject var imageCacher = ImageCacher()
+    
+    init(menu: MenuRecord) {
+        self.menu = menu
+    }
     
     var body: some View {
         ZStack {
@@ -17,9 +24,15 @@ struct MenuCard: View {
                 .fill(Color.gray.opacity(0.3))
                 .cornerRadius(8)
                 .shadow(radius: 4)
-            
-            Text(menu.fields.nama)
-                .multilineTextAlignment(.center)
+            HStack {
+                Image(nsImage: imageCacher.image!) 
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+
+                Text(menu.fields.nama)
+                    .multilineTextAlignment(.center)
+            }
         }
         .frame(width: 204, height: 306)
     }

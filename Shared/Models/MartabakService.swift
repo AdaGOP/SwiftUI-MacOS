@@ -28,7 +28,7 @@ class MartabakService: ObservableObject {
                         self.decoder.keyDecodingStrategy = .convertFromSnakeCase
                         let results = try self.decoder.decode(MenuRecords.self, from: mentorList)
                         DispatchQueue.main.async {
-                            self.menus = results.records
+                            self.menus = results.records ?? [MenuRecord]()
                         }
                     } catch let DecodingError.dataCorrupted(context) {
                         print(context)

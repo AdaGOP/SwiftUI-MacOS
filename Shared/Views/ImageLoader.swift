@@ -1,68 +1,33 @@
 //
 //  ImageLoader.swift
-//  MartabakManis (iOS)
+//  MartabakManis (
 //
 //  Created by Allicia Viona Sagi on 29/07/21.
 //
 
-import SwiftUI
+import Combine
+import Foundation
+import Cocoa
 
-struct ImageLoader: View {
-    private enum LoadState {
-        case loading, success, failure
-    }
+class ImageLoader: ObservableObject {
     
-    private class Loader: ObservableObject {
-        var data = Data()
-        var state = LoadState.loading
-        
-        init(url: String) {
-            guard let parsedURL = URL(string: url) else {
-                fatalError("Invalid URL: \(url)")
-            }
+    var didChange = PassthroughSubject<Data, Never>()
+    
+    var data = Data() {
+        didSet {
+            didChange.send(data)
+        }
+    }
+
+    init(urlString:String) {
+        guard let url = URL(string: urlString) else { return }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else { return }
             
-            URLSession.shared.dataTask(with: parsedURL) { data, response, error in
-                if let data = data, data.count > 0 {
-                    self.data = data
-                    self.state = .success
-                } else {
-                    self.state = .failure
-                }
-                
-                DispatchQueue.main.async {
-                    self.objectWillChange.send()
-                }
-            }.resume()
-        }
-    }
-    
-    @ObservedObject private var loader: Loader
-    var loading: Image
-    var failure: Image
-    
-    var body: some View {
-        selectImage().resizable()
-    }
-    
-    init(url: String, loading: Image = Image(systemName: "photo", failure: Image(systemName: "multiply.circle")) {
-        _loader = ObservedObject(wrappedValue: Loader(url: url))
-        self.loading = loading
-        self.failure = failure
-    }
-    
-    private func selectImage() -> Image {
-        switch loader.state {
-        case .loading:
-            return loading
-        case .failure:
-            return failure
-        default:
-            if let image = UIImage(data: loader.data) {
-                return Image(uiImage: image)
-            } else {
-                return failure
+            DispatchQueue.main.async {
+                self.data = data
             }
-        }
+        }.resume()
     }
 }
 

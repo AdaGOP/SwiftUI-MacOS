@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct MartabakManisApp: App {
+    
     var body: some Scene {
         WindowGroup {
             #if os(macOS)
